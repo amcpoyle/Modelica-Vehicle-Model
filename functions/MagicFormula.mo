@@ -8,5 +8,5 @@ function MagicFormula
     input Real y; // fz
     output Real target_value; // Fx or Fy
 algorithm
-    target_value := (d0+(d1*y)/1000)*y*sin(c*atan(((b0+(b1*y))/1000)*x))
-end MagicFormula
+    target_value := (d0+(d1*y)/1000)*y*sin(c*atan(((b0+(b1*y))/1000)*x));
+end MagicFormula;

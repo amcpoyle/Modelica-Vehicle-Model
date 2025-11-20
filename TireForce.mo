@@ -1,4 +1,5 @@
 function TireForce "Implement Pacejka magic formula tire model with 4 terms"
+    import Modelica.Units.SI.Force;
     input Real slip "slip angle (if lateral force) OR slip ratio (if longitudinal force)";
     input Real Fz "vertical force";
     input Real d1;
@@ -7,6 +8,7 @@ function TireForce "Implement Pacejka magic formula tire model with 4 terms"
     input Real c;
     input Real sv;
     input Real sh;
+    output Force f;
 algorithm
     f := (d1 + d2/1000*Fz)*Fz*sin(c*atan(b*(slip-sh)))+sv;
 end TireForce;

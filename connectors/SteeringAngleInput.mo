@@ -1,3 +1,3 @@
 connector SteeringAngleInput
-    input Modelica.Units.SI.Angle steering_angle;
+    input Modelica.Units.SI.Angle delta;
 end SteeringAngleInput;

@@ -1,3 +1,3 @@
 connector TireForceInput
-    input Modelica.Units.SI.Force Fx, Fy, Fz;
+    input Modelica.Units.SI.Force fx, fy, fz;
 end TireForceInput;

@@ -1,9 +1,12 @@
 model Wheel11
     // Tire 11 = Front Left
     import Modelica.Units.SI.*;
-    import connectors.SteeringAngleInput;
+    import SteeringAngleInput;
+    import VelocityInput;
+    import YawRateInput;
+    import TireForceOutput;
     import Modelica.Constants.g_n;
-    import functions.MagicFormula;
+    import MagicFormula;
     // model will calculate Fx, Fy, Fz for a tire
 
     Force Fx11(start=0);
@@ -77,7 +80,7 @@ equation
     yr.yaw_rate = yaw_rate;
 
     // sending info to chassis
-    tire_forces.Fx = Fx11;
-    tire_forces.Fy = Fy11;
-    tire_forces.Fz = Fz11;
+    tire_forces.fx = Fx11;
+    tire_forces.fy = Fy11;
+    tire_forces.fz = Fz11;
 end Wheel11;

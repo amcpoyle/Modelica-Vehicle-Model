@@ -34,5 +34,7 @@ package ModelConstants
     constant Real c_fy = 1.55870603;
     constant Real b0_fy = 14.0650621;
     constant Real b1_fy = 4.2838454;
+    
+    constant Angle steering_angle_input = 0.2; // rad
 
 end ModelConstants;
